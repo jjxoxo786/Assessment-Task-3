@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment Task 3</title>
+    <style>
+        /* Task 2 Styles */
+        .date-table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .date-table th {
+            background-color: #222;
+            color: rgb(231, 250, 202);
+            padding: 10px;
+            text-align: left;
+            border-bottom: 4px double #555; 
+        }
+        .date-table td {
+            padding: 8px;
+            border-bottom: 1px dashed #999; 
+            font-size: 14px;
+        }
+        .date-table tr:nth-child(even) {
+            background-color: #f2f2f2; 
+            color: #5f0784;
+        }
+        .date-table tr:nth-child(odd) {
+            background-color: #e6f7ff; 
+            color: #0a4683;
+        }
+        .date-table a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .date-table a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        /* Task 3 Styles */
+        .attack-table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .attack-table th {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: 2px solid #555;
+        }
+        .attack-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .attack-table img {
+            width: 150px; /* consistent image width */
+            width: 100%;
+            height: auto;
+        }
+        .attack-table a {
+            color: blue;
+            text-decoration: none;
+        }
+        .attack-table a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        .attack-name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .source {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        /* Task 4 styles */
+        #task4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        margin: 20px;
+        }
+        
+        #task4 .btn {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #333;
+        background-color: #f0f0f0;
+        }
+        
+        #task4 .active {
+        background-color: lightblue;
+        font-weight: bold;
+        }
+        
+        #task4 #messageArea {
+        margin-top: 15px;
+        font-size: 18px;
+        }
+        
+        #task4 #imageArea img {
+            max-width: 300px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        #task4 .source {
+            font-size: 14px;
+            color: #333;
+        }
+        #task4 .source a {
+            color: blue;
+            text-decoration: none;
+        }
+        
+        #task4 input[type="text"] {
+        margin-top: 15px;
+        padding: 5px;
+        width: 200px;
+        text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h3>Task 1: Use CSS to display student number, full name, subject code and title, assignment number and assignment due date.</h3>
+
+    <h1 style="color: blue; font-family: Arial; text-align: center; border: 2px solid black; padding: 10px;">
+        9762103 Janice Sie Young Law
+    </h1>
+
+    <h2 style="background-color: lightblue; color: navy; font-size: 20px; text-align: center; margin: 0;">
+        COMP804: Web Security
+    </h2>
+
+    <h3 style="font-size: 18px; color: darkgreen; background-color: #f0f0f0; border: 1px dashed gray; text-align: center;">
+        Assignment 1, due at the end of Week 5 on Monday 18 Aug 2025
+    </h3>
+
+    <h3>Task 2: Use CSS to style a table.</h3>
+  
+    <table class="date-table">
+        <tr>
+            <th>Activity</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>First day to enrol for re-enrolling (continuing) students</td>
+            <td>24 Nov 2025</td>
+        </tr>
+        <tr>
+            <td>Lectures Commence (weeks 1 – 7)</td>
+            <td>02 Mar – 17 Apr 2026</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol / add subjects yourself</td>
+            <td>13 Mar 2026</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol / add subjects with Head of Students approval (Exceptional circumstance only)</td>
+            <td>20 Mar 2026</td>
+        </tr>
+        <tr>
+            <td>Mid-Session Recess (1 week)</td>
+            <td>20 Apr – 24 Apr 2026</td>
+        </tr>
+        <tr>
+            <td>
+                <strong>CENSUS DATE</strong><br><br>
+                - Fees Due<br>
+                - Last date to withdraw from subjects without paying for them<br>
+                - HECS/HELP debt reporting date<br>
+                - Last day to change HECS/HELP billing option<br><br>
+                <a href="https://uowedu.service-now.com/askuow?id=kb_article_view&sysparm_article=KB0012659&sys_kb_id=d96d6480838fa250d17cd1847daad3b8&spa=1" target="_blank">
+                    Learn more about Census date
+                </a>
+            </td>
+            <td>27 Apr 2026</td>
+        </tr>
+        <tr>
+            <td>Student Services and Amenities Fees Due</td>
+            <td>28 Apr 2026</td>
+        </tr>
+        <tr>
+            <td>Lectures Recommence (weeks 8 – 13)</td>
+            <td>27 Apr – 05 Jun 2026</td>
+        </tr>
+    </table>
+
+    <h3>Task 3: HTML & CSS to create a table displaying information on 10 kinds of web attacks.</h3>
+    
+    <table class="attack-table">
+        <tr>
+            <th>Name</th>
+            <th>Web Attacks</th>
+        </tr>
+
+        <!-- 1: SQL Injection -->
+        <tr>
+            <td>
+                <div class="attack-name">SQL Injection</div>
+                <img src="sql injection.PNG">
+                <div class="source">Source: <a href="https://www.pingidentity.com/en/resources/cybersecurity-fundamentals/threats/sql-injection.html" target="_blank">PingIdentity.com</a></div>
+            </td>
+            <td>
+                SQL Injection is a technique where attackers insert malicious SQL queries into user input fields to manipulate the database into divulging sensitive data.  
+                This can result in unauthorized access of confidential data such as usernames and passwords.  
+                This vulnerability is taken advantage of when user input is not properly sanitized.  
+                <br><br>
+                More info: <a href="https://www.w3schools.com/sql/sql_injection.asp" target="_blank">W3Schools SQL Injection</a>
+            </td>
+        </tr>
+
+        <!-- 2: Cross-Site Scripting -->
+        <tr>
+            <td>
+                <div class="attack-name">Cross-Site Scripting (XSS)</div>
+                <img src="xss.png">
+                <div class="source">Source: <a href="https://www.spanning.com/blog/cross-site-scripting-web-based-application-security-part-3/" target="_blank">Spanning.com</a></div>
+            </td>
+            <td>
+                XSS allows attackers to inject malicious scripts into trusted webpages visited by other unsuspecting users.  
+                The malicious script is executed in the browser when users visit the compromised website which can result in stolen cookies, keystrokes being captured, spread of malware or redirection to harmful websites.  
+                XSS occurs when web applications fail to validate or encode user input properly.  
+                <br><br>
+                More info: <a href="https://owasp.org/www-community/attacks/xss" target="_blank">OWASP XSS</a>
+            </td>
+        </tr>
+
+        <!-- 3: Cross-Site Request Forgery -->
+        <tr>
+            <td>
+                <div class="attack-name">Cross-Site Request Forgery (CSRF)</div>
+                <img src="csrf.png">
+                <div class="source">Source: <a href="https://www.spanning.com/blog/cross-site-forgery-web-based-application-security-part-2/" target="_blank">Spanning.com</a></div>
+            </td>
+            <td>
+                CSRF tricks an authenticated user into unknowingly executing unwanted actions on a web application.  
+                This happens when a user that is logged in to a web application unknowingly opens links or forms sent by the attacker containing a malicious request to the target application. 
+                The target application then, executes the malicious request believing it to be legitimate(as the user is logged in), resulting in unauthorised actions such as changing passwords or transferring funds.  
+                Strong anti-CSRF tokens can help prevent this type of attack.  
+                <br><br>
+                More info: <a href="https://www.cloudflare.com/learning/security/threats/cross-site-request-forgery/" target="_blank">CloudFlare CSRF</a>
+            </td>
+        </tr>
+
+        <!-- 4: Brute Force Attack -->
+        <tr>
+            <td>
+                <div class="attack-name">Brute Force Attack</div>
+                <img src="bfa.PNG">
+                <div class="source">Source: <a href="https://appcheck-ng.com/brute-force-attacks/" target="_blank">AppCheck-ng.com</a></div>
+            </td>
+            <td>
+                A brute force attack involves systematically guessing passwords or logging credentials until the correct one is found(trial and error process).  
+                Automated tools testing various different credential combinations make this process faster and more effective for attackers.  
+                Brute force attacks can be prevented by using strong passwords and account lockout policies.   
+                <br><br>
+                More info: <a href="https://www.fortinet.com/resources/cyberglossary/brute-force-attack#:~:text=A%20brute%20force%20attack%20is,and%20organizations%27%20systems%20and%20networks." target="_blank">Fortinet Brute Force Attack</a>
+            </td>
+        </tr>
+
+        <!-- 5: Man-in-the-Middle (MITM) -->
+        <tr>
+            <td>
+                <div class="attack-name">Man-in-the-Middle (MITM)</div>
+                <img src="mitm.PNG">
+                <div class="source">Source: <a href="https://www.pandasecurity.com/en/mediacenter/man-in-the-middle-attack/" target="_blank">PandaSecurity.com</a></div>
+            </td>
+            <td>
+                MITM attacks occur when an attacker positions themselves between two unknowing parties.  
+                This allows the attacker to secretly intercept and alter communication between the two parties resulting in data theft, credential stealing, and injection of malicious content.  
+                Using HTTPS and secure networks can greatly reduce MITM risks.  
+                <br><br>
+                More info: <a href="https://www.fortinet.com/resources/cyberglossary/man-in-the-middle-attack" target="_blank">Fortinet MITM</a>
+            </td>
+        </tr>
+
+        <!-- 6: Denial of Service (DoS) -->
+        <tr>
+            <td>
+                <div class="attack-name">Denial of Service (DoS)</div>
+                <img src="dos.PNG">
+                <div class="source">Source: <a href="https://www.cloudflare.com/learning/ddos/glossary/denial-of-service/" target="_blank">Cloudflare.com</a></div>
+            </td>
+            <td>
+                A DoS(denial of service) attack aims to make a service unavailable to its legitimate users by overwhelming it with excessive requests.  
+                Distributed versions (distributed denial of service) use multiple systems to launch attacks simultaneously, generating more traffic and making the attack more effective.  
+                Web application firewalls and traffic filtering can mitigate DoS attacks.  
+                <br><br>
+                More info: <a href="https://www.ncsc.gov.uk/collection/denial-service-dos-guidance-collection" target="_blank">NCSC.gov DoS</a>
+            </td>
+        </tr>
+
+        <!-- 7: Directory Traversal -->
+        <tr>
+            <td>
+                <div class="attack-name">Directory Traversal</div>
+                <img src="path.PNG">
+                <div class="source">Source: <a href="https://www.fastly.com/blog/back-to-basics-directory-traversal" target="_blank">Fastly.com</a></div>
+            </td>
+            <td>
+                Directory Traversal attacks exploit improper file path handling(ie inputing '../' characters to navigate server's files/directories) to access restricted files.  
+                This can expose configuration files, passwords, and other sensitive data.  
+                Proper input validation and path sanitization are a few strategies to prevent this attack.  
+                <br><br>
+                More info: <a href="https://owasp.org/www-community/attacks/Path_Traversal" target="_blank">OWASP Path Traversal</a>
+            </td>
+        </tr>
+
+        <!-- 8: Remote File Inclusion (RFI) -->
+        <tr>
+            <td>
+                <div class="attack-name">Remote File Inclusion (RFI)</div>
+                <img src="rfi.PNG">
+                <div class="source">Source: <a href="https://www.cobalt.io/blog/a-pentesters-guide-to-file-inclusion" target="_blank">Cobalt.io</a></div>
+            </td>
+            <td>
+                Remote File Inclusion(RFI) attack occurs when a web application dynamically includes files based on user input without proper validation.
+                This allows attackers to include and execute malicious remote files on the user's web server.    
+                Disabling remote file inclusion in server configuration and sanitizing user input can help prevent RFI.  
+                <br><br>
+                More info: <a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.2-Testing_for_Remote_File_Inclusion" target="_blank">OWASP RFI</a>
+            </td>
+        </tr>
+
+        <!-- 9: Phishing -->
+        <tr>
+            <td>
+                <div class="attack-name">Phishing</div>
+                <img src="phish.PNG">
+                <div class="source">Source: <a href="https://www.bolddesk.com/blogs/phishing-attacks" target="_blank">Bolddesk.com</a></div>
+            </td>
+            <td>
+                Phishing is a social engineering technique that uses deceptive emails or websites to trick users into revealing sensitive information.  
+                These attacks often mimic legitimate companies or impersonate an acquaintance to gain trust.  
+                Awareness training and email filtering can help prevent phishing.  
+                <br><br>
+                More info: <a href="https://www.phishing.org/what-is-phishing" target="_blank">Phishing.org</a>
+            </td>
+        </tr>
+
+        <!-- 10: Session Hijacking -->
+        <tr>
+            <td>
+                <div class="attack-name">Session Hijacking</div>
+                <img src="session.PNG">
+                <div class="source">Source: <a href="https://my3.my.umbc.edu/groups/csee/events/104427" target="_blank">Umbc.edu</a></div>
+            </td>
+            <td>
+                Session Hijacking occurs when an attacker takes over a valid user session on a web application allowing the attacker to impersonate the victim and gain unauthorised access to the web server.  
+                This can be done by predicting or stealing the user's session ID stored in cookies through XSS, sniffing, or malware.  
+                Using secure cookies and HTTPS can help mitigate this risk.  
+                <br><br>
+                More info: <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack" target="_blank">OWASP Session Hijacking</a>
+            </td>
+        </tr>
+
+    </table>
+
+    <h3>Task 4: Javascript with button</h3>
+    
+    <div id="task4">
+        <button class="btn" id="catBtn" onclick="showAnimal('Cat')">Cat</button>
+        <button class="btn" id="dogBtn" onclick="showAnimal('Dog')">Dog</button>
+        <button class="btn" id="frogBtn" onclick="showAnimal('Frog')">Frog</button>
+        <br>
+        <input type="text" id="textField" readonly>
+        <div id="messageArea"></div>
+        <br>
+        <div id="imageArea"></div>
+    </div>
+
+    <script>
+        function showAnimal(animal) {
+            const buttons = document.querySelectorAll('#task4 .btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(animal.toLowerCase() + 'Btn').classList.add('active');
+            document.getElementById('textField').value = 'User clicks ' + animal;
+            document.getElementById('messageArea').innerText =  animal + ' is clicked';
+
+            let imageSrc = '';
+            let sourceHTML = '';
+
+            if (animal === 'Cat') {
+                imageSrc = 'cat.png';
+                sourceHTML = `<div class="source">Source: 
+                    <a href="https://www.theguardian.com/us-news/2025/may/22/ginger-cats-mystery-solved" target="_blank">TheGuardian.com</a></div>`;
+            } else if (animal === 'Dog') {
+                imageSrc = 'dog.png';
+                sourceHTML = `<div class="source">Source: 
+                    <a href="https://theconversation.com/topics/dog-breeds-94962" target="_blank">TheConversation.com</a></div>`;
+            } else if (animal === 'Frog') {
+                imageSrc = 'frog.png';
+                sourceHTML = `<div class="source">Source: 
+                    <a href="https://www.lvzoo.org/animals/whites-tree-frog/" target="_blank">Lvzoo.org</a></div>`;
+            }
+
+            document.getElementById('imageArea').innerHTML = `
+                <img src="${imageSrc}" alt="${animal}">
+                ${sourceHTML}
+            `;
+        }
+    </script>
+
+    <h3>Task 5: Github repository</h3>
+    <a href="reports/sales-report.pdf" target="_blank">View Report</a>
+</body>
+</html>
